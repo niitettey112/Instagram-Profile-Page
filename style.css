@@ -107,6 +107,8 @@ header{
 .search__input input{
     border: .95px solid #7c7c7c;
     outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: .95rem;
     border-radius: 3px;
 }
 
@@ -121,6 +123,7 @@ header{
     position: absolute;
     left: 48%;
     top: 37%;
+    font-size: .90rem;
 }
 
 .icons__list ul{
@@ -144,25 +147,96 @@ main{
 
 .profile{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 9rem 0 0 4rem;
 }
 
-
+.profile__img{
+    border: 5px solid #ff0059;
+    border-radius: 50%;
+    padding: .45rem;
+    cursor: pointer;
+}
 
 .profile__img img{
     position: relative;
     width: 155px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid red;
 }
 
-.profile__img img::before{
-    content: '';
-    position: relative;
-    width: 100px;
-    height: 100px;
+.profile__details__1{
+    display: flex;
+    align-items: center;
+}
+
+.profile__name{
+    padding-right: 1rem;
+}
+
+.profile__name h1{
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.follow__btn{
+    margin: 0 .75rem;
+    cursor: pointer;
+}
+
+.follow__btn a{
+    text-decoration: none;
+    background-color: #418dff;
+    padding: .35rem 1.5rem;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: .90rem;
+    letter-spacing: 1px;
+    transition: background-color .5s ease;
+}
+
+.follow__btn a:hover{
+    background-color: #2b80ff;
+}
+
+.arrow__btn{
+    margin: 0;
+    cursor: pointer;
+}
+
+.bxs-down-arrow{
+    text-align: center;
+}
+
+.arrow__btn a{
+    text-decoration: none;
+    background-color: #418dff;
+    padding: .35rem .55rem;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: .90rem;
+    letter-spacing: 1px;
+    transition: background-color .5s ease;
+}
+
+.dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .55rem;
+    cursor: pointer;
+}
+
+.dots span{
     display: block;
-    background-color: darkblue;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+    margin: .1rem;
 }
